@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Services\Comment\BlogService;
-use App\Services\Comment\IBlogService;
+use App\Services\Blog\BlogService;
+use App\Services\Blog\IBlogService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

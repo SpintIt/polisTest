@@ -8,7 +8,7 @@ use App\Http\Requests\CommentRequest;
 use App\Http\Resources\ArticleResource;
 use App\Http\Resources\CommentResource;
 use App\Models\Article;
-use App\Services\Comment\IBlogService;
+use App\Services\Blog\IBlogService;
 use Illuminate\Database\Eloquent\Collection;
 
 class ArticleController extends Controller

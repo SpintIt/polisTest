@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Comment;
+namespace App\Services\Blog;
 
 use App\Http\Requests\ArticleRequest;
 use App\Http\Requests\CommentRequest;
