@@ -6,6 +6,7 @@
 
 ### Создайте файл `.env` на основе `.env.example`
 ### `composer install`
+### `npm i`
 ### `./vendor/bin/sail up -d` (далее просто sail)
 ### `sail artisan key:generate`
 ### `sail artisan migrate`

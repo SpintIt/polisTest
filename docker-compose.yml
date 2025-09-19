@@ -52,7 +52,6 @@ services:
             - '3307:3306'
         environment:
             MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_ROOT_HOST: '%'
             MYSQL_DATABASE: '${DB_DATABASE}'
             MYSQL_USER: '${DB_USERNAME}'
             MYSQL_PASSWORD: '${DB_PASSWORD}'
@@ -71,6 +70,7 @@ services:
                 - '-p${DB_PASSWORD}'
             retries: 3
             timeout: 5s
+        command: mysqld --sql-mode="" --bind-address=0.0.0.0 --skip-name-resolve
     redis:
         image: 'redis:alpine'
         ports:
